@@ -57,8 +57,41 @@ console.log(cities[2].industrialHub == false);
 console.log("is Faisalabad an industrial hub: cities[3].industrialHub == false. I predict false.");
 console.log(cities[3].industrialHub == false);
 
-console.log("Does Lahore have more than 30 universities: cities.numberOfUniversities >= 30. I predict true");
+console.log("Does Lahore have more than 30 universities: cities[1].numbewrOfUniversities>=30. I predict true");
 console.log(cities[1].numbewrOfUniversities>=30);
 
-console.log("Does Faisalabad have more than 30 universities: cities.numberOfUniversities >= 30. I predict false");
+console.log("Does Faisalabad have more than 30 universities: cities[3].numbewrOfUniversities>=30. I predict false");
 console.log(cities[3].numbewrOfUniversities>=30);
+
+//use of "and" and "or" operators.
+
+console.log("Do Karachi and Lahore have more than 30 universities: cities[0].numbewrOfUniversities && cities[1].numbewrOfUniversities >= 30. I predict true");
+console.log(cities[0].numbewrOfUniversities && cities[1].numbewrOfUniversities >= 30);
+
+
+console.log("Do Karachi and Faisalabad have more than 30 universities: cities[0].numbewrOfUniversities || cities[3].numbewrOfUniversities >= 30. I predict true");
+console.log(cities[0].numbewrOfUniversities >= 30 || cities[3].numbewrOfUniversities >= 30);
+
+//comparision of strings.
+console.log("Do Karachi and Lahore are not equal as an string. I predict true.");
+console.log(cities[0].cityName != cities[1].cityName);
+
+console.log(cities[0].cityName == "karachi");
+console.log(cities[1].cityName != "lahore");
+
+//comparision by lowercase and uppercase.
+
+console.log('Do cities[0].cityName.slice(0,1).toUpperCase()+cities[0].cityName.slice(1)=="Karachi". I guess it is true.');
+console.log(cities[0].cityName.slice(0,1).toUpperCase()+cities[0].cityName.slice(1)=="Karachi");
+
+console.log('Do cities[0].cityName =="Karachi". I guess it is false.');
+console.log(cities[0].cityName == "Karachi");
+
+
+let rivers = ["Indus" , "Jehlum" , "Ravi" , "Kabul"];
+
+console.log("Test whether an item is in a array");
+console.log(rivers.includes("Indus"));
+
+console.log("Test whether an item is not in a array");
+console.log(rivers.includes("Chanab"));
